@@ -14,4 +14,7 @@ name = "day_02"
 [[bin]]
 name = "day_03"
 
+[[bin]]
+name = "day_04"
+
 [dependencies]

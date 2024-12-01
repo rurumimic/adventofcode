@@ -2,6 +2,6 @@
 
 ```bash
 cargo run --bin day_01
-cargo test --bin day_02
+cargo run --bin day_01 src/inputs/day_01.txt
 ```
 

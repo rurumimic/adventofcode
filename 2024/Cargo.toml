@@ -7,5 +7,8 @@ publish = false
 [[bin]]
 name = "day_01"
 
+[[bin]]
+name = "day_02"
+
 [dependencies]
 

@@ -1,9 +1,9 @@
 use std::fs::File;
 use std::io::{self, BufRead};
 
-static DAY: u8 = 1;
-static URL: &str = "https://adventofcode.com/2022/day/1";
-static INPUT: &str = "src/inputs/day_01.txt";
+const DAY: u8 = 1;
+const URL: &str = "https://adventofcode.com/2022/day/1";
+const INPUT: &str = "src/inputs/day_01.txt";
 
 fn one(calories: Vec<Vec<u32>>) -> u32 {
     calories

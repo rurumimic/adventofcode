@@ -1,9 +1,9 @@
 use std::fs::File;
 use std::io;
 
-static DAY: u8 = 2;
-static URL: &str = "https://adventofcode.com/2022/day/2";
-static INPUT: &str = "src/inputs/day_02.txt";
+const DAY: u8 = 2;
+const URL: &str = "https://adventofcode.com/2022/day/2";
+const INPUT: &str = "src/inputs/day_02.txt";
 
 #[derive(Debug, PartialEq)]
 enum Round {

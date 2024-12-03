@@ -2,9 +2,9 @@ use std::collections::HashSet;
 use std::fs::File;
 use std::io;
 
-static DAY: u8 = 3;
-static URL: &str = "https://adventofcode.com/2022/day/3";
-static INPUT: &str = "src/inputs/day_03.txt";
+const DAY: u8 = 3;
+const URL: &str = "https://adventofcode.com/2022/day/3";
+const INPUT: &str = "src/inputs/day_03.txt";
 
 static LOWER_A: u32 = 'a' as u32;
 
@@ -74,4 +74,3 @@ fn main() -> Result<(), io::Error> {
 
     Ok(())
 }
-

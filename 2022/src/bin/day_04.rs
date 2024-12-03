@@ -1,9 +1,9 @@
 use std::fs::File;
 use std::io;
 
-static DAY: u8 = 4;
-static URL: &str = "https://adventofcode.com/2022/day/4";
-static INPUT: &str = "src/inputs/day_04.txt";
+const DAY: u8 = 4;
+const URL: &str = "https://adventofcode.com/2022/day/4";
+const INPUT: &str = "src/inputs/day_04.txt";
 
 fn one(items: &Vec<&str>) -> u32 {
     let mut sum: u32 = 0;
@@ -17,12 +17,11 @@ fn one(items: &Vec<&str>) -> u32 {
 
         if sections[0] <= sections[2] && sections[1] >= sections[3] {
             sum += 1;
-        } else if sections[0] >= sections[2] && sections[1] <= sections[3]  {
+        } else if sections[0] >= sections[2] && sections[1] <= sections[3] {
             sum += 1;
         } else {
             continue;
         }
-
     }
 
     sum
@@ -40,12 +39,11 @@ fn two(items: &Vec<&str>) -> u32 {
 
         if sections[0] <= sections[2] && sections[1] >= sections[2] {
             sum += 1;
-        } else if sections[0] >= sections[2] && sections[0] <= sections[3]  {
+        } else if sections[0] >= sections[2] && sections[0] <= sections[3] {
             sum += 1;
         } else {
             continue;
         }
-
     }
 
     sum
@@ -65,4 +63,3 @@ fn main() -> Result<(), io::Error> {
 
     Ok(())
 }
-
